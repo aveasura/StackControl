@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <StackTuner.SettingsCategory>StackControl</StackTuner.SettingsCategory>
+  <StackTuner.Title>StackControl</StackTuner.Title>
+  <StackTuner.Description>Легкая настройка размеров стаков предметов.</StackTuner.Description>
+  <StackTuner.SingleStackHint>StackControl изменяет обычные стакаемые предметы, части тела, импланты и небольшой whitelist безопасных особых предметов.&#10;Оружие, броня, одежда, трупы и предметы с качеством не изменяются.</StackTuner.SingleStackHint>
+  <StackTuner.MultiplayerHint>Мультиплеер:&#10;У всех игроков должна быть одинаковая версия мода и одинаковые настройки.</StackTuner.MultiplayerHint>
+  <StackTuner.Preset>Режим размеров стаков</StackTuner.Preset>
+  <StackTuner.PresetHint>Пресеты сохраняются и применяются сразу после выбора.&#10;Пользовательские значения применяются кнопкой Сохранить и применить.</StackTuner.PresetHint>
+  <StackTuner.PresetValuesTitle>Значения пресетов</StackTuner.PresetValuesTitle>
+  <StackTuner.PresetValues>Малый: x10.&#10;Средний: x50.&#10;Большой: x100.&#10;Огромный: x500.&#10;Пользовательский - вручную.&#10;</StackTuner.PresetValues>
+  <StackTuner.CustomHint>В пользовательском режиме числа задают точный максимальный размер стака для каждой категории.&#10;После изменения чисел нажмите Сохранить и применить.</StackTuner.CustomHint>
+  <StackTuner.CustomSection>Лимиты по категориям</StackTuner.CustomSection>
+  <StackTuner.SaveAndApply>Сохранить и применить</StackTuner.SaveAndApply>
+  <StackTuner.ResetDefaults>Вернуть по умолчанию</StackTuner.ResetDefaults>
+  <StackTuner.Preset.Small>Малый - x10</StackTuner.Preset.Small>
+  <StackTuner.Preset.Medium>Средний - x50</StackTuner.Preset.Medium>
+  <StackTuner.Preset.Large>Большой - x100</StackTuner.Preset.Large>
+  <StackTuner.Preset.Huge>Огромный - x500</StackTuner.Preset.Huge>
+  <StackTuner.Preset.Custom>Пользовательский</StackTuner.Preset.Custom>
+  <StackTuner.Category.Resources>Ресурсы и материалы</StackTuner.Category.Resources>
+  <StackTuner.Category.Silver>Серебро</StackTuner.Category.Silver>
+  <StackTuner.Category.Gold>Золото</StackTuner.Category.Gold>
+  <StackTuner.Category.Medicine>Медицина</StackTuner.Category.Medicine>
+  <StackTuner.Category.BodyParts>Части тела и импланты</StackTuner.Category.BodyParts>
+  <StackTuner.Category.SpecialItems>Безопасные особые предметы</StackTuner.Category.SpecialItems>
+  <StackTuner.Category.Textiles>Ткани и кожа</StackTuner.Category.Textiles>
+  <StackTuner.Category.Drugs>Наркотики</StackTuner.Category.Drugs>
+  <StackTuner.Category.Meat>Сырое мясо</StackTuner.Category.Meat>
+  <StackTuner.Category.RawFood>Сырая еда, кроме мяса</StackTuner.Category.RawFood>
+  <StackTuner.Category.Meals>Готовая еда и блюда</StackTuner.Category.Meals>
+  <StackTuner.Category.OtherStackable>Прочие стакаемые предметы</StackTuner.Category.OtherStackable>
+</LanguageData>

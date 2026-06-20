@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>StackControl</name>
+  <author>aveasura</author>
+  <packageId>aveasura.stackcontrol</packageId>
+  <supportedVersions>
+    <li>1.5</li>
+    <li>1.6</li>
+  </supportedVersions>
+  <description>Stack Control is a lightweight stack size configuration mod for RimWorld.
+
+Configure item stack sizes with simple presets or exact custom limits.
+
+Features:
+- No HugsLib or Harmony required.
+- Simple presets: Small x10, Medium x50, Large x100, Huge x500.
+- Custom stack limits by item category.
+- Supports regular stackable items, body parts, implants and selected safe special items.
+- Does not change weapons, armor, apparel, corpses or quality-based items.
+- Safe special items include neurotrainers, psytrainers, psylink neuroformers, psychic pulsers and mech serums.
+
+Multiplayer:
+All players should use the same mod version and the same settings.</description>
+</ModMetaData>

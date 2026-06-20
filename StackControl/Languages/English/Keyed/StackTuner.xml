@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+    <StackTuner.SettingsCategory>StackControl</StackTuner.SettingsCategory>
+    <StackTuner.Title>StackControl</StackTuner.Title>
+    <StackTuner.Description>Configure item stack sizes with simple presets or custom limits.</StackTuner.Description>
+    <StackTuner.SingleStackHint>StackControl changes normal stackable items, body parts, implants and a small whitelist of safe special items.&#10;Weapons, armor, apparel, corpses and quality-based items are left untouched.</StackTuner.SingleStackHint>
+    <StackTuner.MultiplayerHint>Multiplayer note:&#10;All players should use the same mod version and the same settings.</StackTuner.MultiplayerHint>
+    <StackTuner.Preset>Stack size mode</StackTuner.Preset>
+    <StackTuner.PresetHint>Preset changes are saved and applied immediately.&#10;Custom values are applied with the Save and apply button.</StackTuner.PresetHint>
+    <StackTuner.PresetValuesTitle>Preset values</StackTuner.PresetValuesTitle>
+    <StackTuner.PresetValues>Small: x10.&#10;Medium: x50.&#10;Large: x100.&#10;Huge: x500.&#10;Custom - manual.&#10;</StackTuner.PresetValues>
+    <StackTuner.CustomHint>Custom mode uses exact maximum stack sizes for each category.&#10;Press Save and apply after editing numbers.</StackTuner.CustomHint>
+    <StackTuner.CustomSection>Custom category limits</StackTuner.CustomSection>
+    <StackTuner.SaveAndApply>Save and apply</StackTuner.SaveAndApply>
+    <StackTuner.ResetDefaults>Restore defaults</StackTuner.ResetDefaults>
+    <StackTuner.Preset.Small>Small - x10</StackTuner.Preset.Small>
+    <StackTuner.Preset.Medium>Medium - x50</StackTuner.Preset.Medium>
+    <StackTuner.Preset.Large>Large - x100</StackTuner.Preset.Large>
+    <StackTuner.Preset.Huge>Huge - x500</StackTuner.Preset.Huge>
+    <StackTuner.Preset.Custom>Custom</StackTuner.Preset.Custom>
+    <StackTuner.Category.Resources>Resources and materials</StackTuner.Category.Resources>
+    <StackTuner.Category.Silver>Silver</StackTuner.Category.Silver>
+    <StackTuner.Category.Gold>Gold</StackTuner.Category.Gold>
+    <StackTuner.Category.Medicine>Medicine</StackTuner.Category.Medicine>
+    <StackTuner.Category.BodyParts>Body parts and implants</StackTuner.Category.BodyParts>
+    <StackTuner.Category.SpecialItems>Safe special items</StackTuner.Category.SpecialItems>
+    <StackTuner.Category.Textiles>Textiles and leather</StackTuner.Category.Textiles>
+    <StackTuner.Category.Drugs>Drugs</StackTuner.Category.Drugs>
+    <StackTuner.Category.Meat>Raw meat</StackTuner.Category.Meat>
+    <StackTuner.Category.RawFood>Raw food, except meat</StackTuner.Category.RawFood>
+    <StackTuner.Category.Meals>Meals and ready-to-eat food</StackTuner.Category.Meals>
+    <StackTuner.Category.OtherStackable>Other stackable items</StackTuner.Category.OtherStackable>
+</LanguageData>

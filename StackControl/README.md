@@ -2,6 +2,12 @@
 
 StackControl is a lightweight stack size configuration mod for RimWorld.
 
+## Supported versions
+
+- RimWorld 1.4
+- RimWorld 1.5
+- RimWorld 1.6
+
 ## Features
 
 - No HugsLib dependency.

@@ -1,4 +1,4 @@
-﻿# StackControl
+# StackControl
 
 A lightweight stack size configuration mod for RimWorld.
 
@@ -16,6 +16,7 @@ StackControl lets you increase item stack sizes using simple presets or exact cu
 
 ## Supported versions
 
+* RimWorld 1.4
 * RimWorld 1.5
 * RimWorld 1.6
 

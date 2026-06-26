@@ -14,6 +14,7 @@ StackControl is a lightweight stack size configuration mod for RimWorld.
 - No Harmony dependency.
 - Simple presets: Small x10, Medium x50, Large x100, Huge x500.
 - Custom stack limits by item category.
+- Custom multiplier mode for choosing your own stack multiplier.
 - Safe handling for normal stackable items.
 - Explicit support for body parts, implants and safe special items.
 - Weapons, armor, apparel, corpses and quality-based items are left untouched.

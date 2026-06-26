@@ -2,14 +2,17 @@
 <LanguageData>
   <StackTuner.SettingsCategory>StackControl</StackTuner.SettingsCategory>
   <StackTuner.Title>StackControl</StackTuner.Title>
-  <StackTuner.Description>Легкая настройка размеров стаков предметов.</StackTuner.Description>
+  <StackTuner.Description>Легкая настройка размеров стаков предметов: пресеты, свой множитель или свои лимиты.</StackTuner.Description>
   <StackTuner.SingleStackHint>StackControl изменяет обычные стакаемые предметы, части тела, импланты и небольшой whitelist безопасных особых предметов.&#10;Оружие, броня, одежда, трупы и предметы с качеством не изменяются.</StackTuner.SingleStackHint>
   <StackTuner.MultiplayerHint>Мультиплеер:&#10;У всех игроков должна быть одинаковая версия мода и одинаковые настройки.</StackTuner.MultiplayerHint>
   <StackTuner.Preset>Режим размеров стаков</StackTuner.Preset>
-  <StackTuner.PresetHint>Пресеты сохраняются и применяются сразу после выбора.&#10;Пользовательские значения применяются кнопкой Сохранить и применить.</StackTuner.PresetHint>
+  <StackTuner.PresetHint>Пресеты сохраняются и применяются сразу после выбора.&#10;Пользовательские значения множителя и лимитов применяются кнопкой Сохранить и применить.</StackTuner.PresetHint>
   <StackTuner.PresetValuesTitle>Значения пресетов</StackTuner.PresetValuesTitle>
-  <StackTuner.PresetValues>Малый: x10.&#10;Средний: x50.&#10;Большой: x100.&#10;Огромный: x500.&#10;Пользовательский - вручную.&#10;</StackTuner.PresetValues>
-  <StackTuner.CustomHint>В пользовательском режиме числа задают точный максимальный размер стака для каждой категории.&#10;После изменения чисел нажмите Сохранить и применить.</StackTuner.CustomHint>
+  <StackTuner.PresetValues>Малый: x10.&#10;Средний: x50.&#10;Большой: x100.&#10;Огромный: x500.&#10;Свой множитель - один множитель для размеров стаков.&#10;Свои лимиты - вручную по категориям.</StackTuner.PresetValues>
+  <StackTuner.CustomMultiplierHint>Режим своего множителя умножает ванильные размеры стаков на одно число.&#10;После изменения множителя нажмите Сохранить и применить.</StackTuner.CustomMultiplierHint>
+  <StackTuner.CustomMultiplierSection>Свой множитель</StackTuner.CustomMultiplierSection>
+  <StackTuner.CustomMultiplierValue>Множитель</StackTuner.CustomMultiplierValue>
+  <StackTuner.CustomHint>Режим своих лимитов задает точный максимальный размер стака для каждой категории.&#10;После изменения чисел нажмите Сохранить и применить.</StackTuner.CustomHint>
   <StackTuner.CustomSection>Лимиты по категориям</StackTuner.CustomSection>
   <StackTuner.SaveAndApply>Сохранить и применить</StackTuner.SaveAndApply>
   <StackTuner.ResetDefaults>Вернуть по умолчанию</StackTuner.ResetDefaults>
@@ -17,7 +20,8 @@
   <StackTuner.Preset.Medium>Средний - x50</StackTuner.Preset.Medium>
   <StackTuner.Preset.Large>Большой - x100</StackTuner.Preset.Large>
   <StackTuner.Preset.Huge>Огромный - x500</StackTuner.Preset.Huge>
-  <StackTuner.Preset.Custom>Пользовательский</StackTuner.Preset.Custom>
+  <StackTuner.Preset.CustomMultiplier>Свой множитель</StackTuner.Preset.CustomMultiplier>
+  <StackTuner.Preset.Custom>Свои лимиты</StackTuner.Preset.Custom>
   <StackTuner.Category.Resources>Ресурсы и материалы</StackTuner.Category.Resources>
   <StackTuner.Category.Silver>Серебро</StackTuner.Category.Silver>
   <StackTuner.Category.Gold>Золото</StackTuner.Category.Gold>

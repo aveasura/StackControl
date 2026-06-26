@@ -9,7 +9,10 @@ namespace StackTuner
         {
             { "StackTuner.SettingsCategory", "StackControl" },
             { "StackTuner.Title", "StackControl" },
-            { "StackTuner.Description", "Configure item stack sizes with simple presets or custom limits." },
+            {
+                "StackTuner.Description",
+                "Configure item stack sizes with simple presets, a custom multiplier, or custom limits."
+            },
             {
                 "StackTuner.SingleStackHint",
                 "StackControl changes normal stackable items, body parts, implants and a small whitelist of safe special items.\nWeapons, armor, apparel, corpses and quality-based items are left untouched."
@@ -21,13 +24,22 @@ namespace StackTuner
             { "StackTuner.Preset", "Stack size mode" },
             {
                 "StackTuner.PresetHint",
-                "Preset changes are saved and applied immediately.\nCustom values are applied with the Save and apply button."
+                "Preset changes are saved and applied immediately.\nCustom multiplier and custom limit values are applied with the Save and apply button."
             },
             { "StackTuner.PresetValuesTitle", "Preset values" },
-            { "StackTuner.PresetValues", "Small: x10\nMedium: x50\nLarge: x100\nHuge: x500.\nCustom - manual." },
+            {
+                "StackTuner.PresetValues",
+                "Small: x10\nMedium: x50\nLarge: x100\nHuge: x500\nCustom multiplier - one multiplier for stack sizes.\nCustom limits - manual category limits."
+            },
+            {
+                "StackTuner.CustomMultiplierHint",
+                "Custom multiplier mode multiplies vanilla stack sizes by one number.\nPress Save and apply after editing the multiplier."
+            },
+            { "StackTuner.CustomMultiplierSection", "Custom multiplier" },
+            { "StackTuner.CustomMultiplierValue", "Multiplier" },
             {
                 "StackTuner.CustomHint",
-                "Custom mode uses exact maximum stack sizes for each category.\nPress Save and apply after editing numbers."
+                "Custom limits mode uses exact maximum stack sizes for each category.\nPress Save and apply after editing numbers."
             },
             { "StackTuner.CustomSection", "Custom category limits" },
             { "StackTuner.SaveAndApply", "Save and apply" },
@@ -36,7 +48,8 @@ namespace StackTuner
             { "StackTuner.Preset.Medium", "Medium - x50" },
             { "StackTuner.Preset.Large", "Large - x100" },
             { "StackTuner.Preset.Huge", "Huge - x500" },
-            { "StackTuner.Preset.Custom", "Custom - manual" },
+            { "StackTuner.Preset.CustomMultiplier", "Custom multiplier" },
+            { "StackTuner.Preset.Custom", "Custom limits" },
             { "StackTuner.Category.Resources", "Resources and materials" },
             { "StackTuner.Category.Silver", "Silver" },
             { "StackTuner.Category.Gold", "Gold" },

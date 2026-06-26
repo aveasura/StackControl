@@ -6,6 +6,8 @@ namespace StackTuner
     {
         public StackTunerPreset preset = StackTunerPreset.Medium;
 
+        public int customMultiplier = 25;
+
         public int customResourcesLimit = 5000;
         public int customSilverLimit = 25000;
         public int customGoldLimit = 25000;
@@ -22,6 +24,8 @@ namespace StackTuner
         public override void ExposeData()
         {
             Scribe_Values.Look(ref preset, "preset", StackTunerPreset.Medium);
+
+            Scribe_Values.Look(ref customMultiplier, "customMultiplier", 25);
 
             Scribe_Values.Look(ref customResourcesLimit, "customResourcesLimit", 5000);
             Scribe_Values.Look(ref customSilverLimit, "customSilverLimit", 25000);
@@ -46,6 +50,8 @@ namespace StackTuner
         {
             preset = StackTunerPreset.Medium;
 
+            customMultiplier = 25;
+
             customResourcesLimit = 5000;
             customSilverLimit = 25000;
             customGoldLimit = 25000;
@@ -62,6 +68,8 @@ namespace StackTuner
 
         public void Clamp()
         {
+            customMultiplier = ClampCustomMultiplier(customMultiplier);
+
             customResourcesLimit = ClampCustomLimit(customResourcesLimit);
             customSilverLimit = ClampCustomLimit(customSilverLimit);
             customGoldLimit = ClampCustomLimit(customGoldLimit);
@@ -88,14 +96,36 @@ namespace StackTuner
                     return 100;
                 case StackTunerPreset.Huge:
                     return 500;
+                case StackTunerPreset.CustomMultiplier:
+                    return customMultiplier;
                 default:
                     return 1;
             }
         }
 
+        public bool UsesCustomMultiplier()
+        {
+            return preset == StackTunerPreset.CustomMultiplier;
+        }
+
         public bool UsesCustomLimits()
         {
             return preset == StackTunerPreset.Custom;
+        }
+
+        public static int ClampCustomMultiplier(int value)
+        {
+            if (value < 2)
+            {
+                return 2;
+            }
+
+            if (value > 500)
+            {
+                return 500;
+            }
+
+            return value;
         }
 
         public static int ClampCustomLimit(int value)

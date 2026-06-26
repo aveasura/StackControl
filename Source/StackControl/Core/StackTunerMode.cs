@@ -6,6 +6,7 @@ namespace StackTuner
         Medium = 1,
         Large = 2,
         Huge = 3,
-        Custom = 4
+        Custom = 4,
+        CustomMultiplier = 5
     }
 }

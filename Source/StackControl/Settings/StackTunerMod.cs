@@ -11,6 +11,8 @@ namespace StackTuner
         private Vector2 scrollPosition;
         private bool customBuffersInitialized;
 
+        private string customMultiplierBuffer;
+
         private string customResourcesBuffer;
         private string customSilverBuffer;
         private string customGoldBuffer;
@@ -43,7 +45,7 @@ namespace StackTuner
 
             Text.Font = GameFont.Small;
 
-            float viewHeight = Settings.UsesCustomLimits() ? 745f : 430f;
+            float viewHeight = Settings.UsesCustomLimits() ? 770f : Settings.UsesCustomMultiplier() ? 500f : 450f;
             Rect viewRect = new Rect(0f, 0f, inRect.width - 16f, viewHeight);
             Widgets.BeginScrollView(inRect, ref scrollPosition, viewRect);
 
@@ -56,7 +58,21 @@ namespace StackTuner
             listing.Gap(6f);
             DrawWrappedLabel(listing, StackTunerText.T("StackTuner.PresetHint"));
 
-            if (Settings.UsesCustomLimits())
+            if (Settings.UsesCustomMultiplier())
+            {
+                listing.GapLine();
+                DrawWrappedLabel(listing, StackTunerText.T("StackTuner.CustomMultiplierHint"));
+                listing.Gap(6f);
+                DrawSectionHeader(listing, StackTunerText.T("StackTuner.CustomMultiplierSection"));
+                listing.Gap(4f);
+
+                DrawMultiplierRow(listing, StackTunerText.T("StackTuner.CustomMultiplierValue"),
+                    ref Settings.customMultiplier, ref customMultiplierBuffer);
+
+                listing.GapLine();
+                DrawCustomButtons(listing);
+            }
+            else if (Settings.UsesCustomLimits())
             {
                 listing.GapLine();
                 DrawWrappedLabel(listing, StackTunerText.T("StackTuner.CustomHint"));
@@ -166,6 +182,8 @@ namespace StackTuner
                         delegate { SetPreset(StackTunerPreset.Large); }),
                     new FloatMenuOption(PresetLabel(StackTunerPreset.Huge),
                         delegate { SetPreset(StackTunerPreset.Huge); }),
+                    new FloatMenuOption(PresetLabel(StackTunerPreset.CustomMultiplier),
+                        delegate { SetPreset(StackTunerPreset.CustomMultiplier); }),
                     new FloatMenuOption(PresetLabel(StackTunerPreset.Custom),
                         delegate { SetPreset(StackTunerPreset.Custom); })
                 };
@@ -194,10 +212,28 @@ namespace StackTuner
                     return StackTunerText.T("StackTuner.Preset.Large");
                 case StackTunerPreset.Huge:
                     return StackTunerText.T("StackTuner.Preset.Huge");
+                case StackTunerPreset.CustomMultiplier:
+                    return StackTunerText.T("StackTuner.Preset.CustomMultiplier");
                 case StackTunerPreset.Custom:
                     return StackTunerText.T("StackTuner.Preset.Custom");
                 default:
                     return StackTunerText.T("StackTuner.Preset.Medium");
+            }
+        }
+
+        private static void DrawMultiplierRow(Listing_Standard listing, string label, ref int value, ref string buffer)
+        {
+            Rect row = listing.GetRect(30f);
+            Rect labelRect = new Rect(row.x, row.y + 5f, row.width - 150f, row.height);
+            Rect fieldRect = new Rect(row.xMax - 140f, row.y, 140f, row.height);
+
+            Widgets.Label(labelRect, label);
+            buffer = Widgets.TextField(fieldRect, buffer);
+
+            int parsed;
+            if (int.TryParse(buffer, out parsed))
+            {
+                value = StackTunerSettings.ClampCustomMultiplier(parsed);
             }
         }
 
@@ -263,6 +299,8 @@ namespace StackTuner
 
         private void ResetCustomBuffersFromSettings()
         {
+            customMultiplierBuffer = Settings.customMultiplier.ToString();
+
             customResourcesBuffer = Settings.customResourcesLimit.ToString();
             customSilverBuffer = Settings.customSilverLimit.ToString();
             customGoldBuffer = Settings.customGoldLimit.ToString();

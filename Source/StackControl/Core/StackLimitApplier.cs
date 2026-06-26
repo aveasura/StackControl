@@ -66,7 +66,7 @@ namespace StackTuner
 
                 int newLimit = settings.UsesCustomLimits()
                     ? StackCategoryDetector.GetCustomLimit(thingDef, settings)
-                    : Mathf.RoundToInt(originalLimit * settings.MultiplierForPreset());
+                    : CalculateMultiplierLimit(originalLimit, settings.MultiplierForPreset());
 
                 newLimit = Mathf.Max(originalLimit, StackTunerSettings.ClampCustomLimit(newLimit));
 
@@ -87,6 +87,17 @@ namespace StackTuner
                             ", skipped single-stack items: " + skippedSingleStack + ", allowed body parts: " +
                             allowedBodyParts + ", allowed special items: " + allowedSpecialItems + ".");
             }
+        }
+
+        private static int CalculateMultiplierLimit(int originalLimit, int multiplier)
+        {
+            long newLimit = (long)originalLimit * multiplier;
+            if (newLimit > int.MaxValue)
+            {
+                return int.MaxValue;
+            }
+
+            return (int)newLimit;
         }
 
         private static int GetOriginalLimit(ThingDef thingDef)

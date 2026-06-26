@@ -10,6 +10,7 @@ StackControl lets you increase item stack sizes using simple presets or exact cu
 * No Harmony required
 * Simple presets: Small x10, Medium x50, Large x100, Huge x500
 * Custom stack limits by category
+* Custom multiplier mode for choosing your own stack multiplier.
 * Supports resources, food, medicine, drugs, textiles, body parts, implants and selected safe special items
 * Does not change weapons, armor, apparel, corpses or quality-based items
 * Multiplayer-friendly when all players use the same settings
